@@ -69,8 +69,37 @@ app.get('/encoded', (req, res) => {
                     "emittedAt": date,
                     "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
                     "encoding":"hls",
+                    "quality": "240p"
+                    },
+                    { "type": "video.encoding.quality.completed",
+                    "emittedAt": date,
+                    "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
+                    "encoding":"hls",
+                    "quality": "360p"
+                    },
+                    { "type": "video.encoding.quality.completed",
+                    "emittedAt": date,
+                    "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
+                    "encoding":"hls",
+                    "quality": "480p"
+                    },
+                    { "type": "video.encoding.quality.completed",
+                    "emittedAt": date,
+                    "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
+                    "encoding":"hls",
                     "quality": "720p"
-                    }]
+                    },
+                    { "type": "video.encoding.quality.completed",
+                    "emittedAt": date,
+                    "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
+                    "encoding":"hls",
+                    "quality": "1080p"
+                    },{ "type": "video.encoding.quality.completed",
+                    "emittedAt": date,
+                    "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
+                    "encoding":"hls",
+                    "quality": "2160p"
+                    },]
 
 
     res.send(response);  
