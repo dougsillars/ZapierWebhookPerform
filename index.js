@@ -13,10 +13,10 @@ app.get('/livestart', (req, res) => {
     var dateinMs = Date.now();
     date = new Date(dateinMs)
     date = date.toISOString();
-    var response = { "type": "live-stream.broadcast.started",
+    var response = [{ "type": "live-stream.broadcast.started",
                     "emittedAt": date,
                     "liveStreamId":"li2DAIhNB6eM0U5OAOzMeiHY"
-                    }
+                    }]
 
 
     res.send(response);  
@@ -27,10 +27,10 @@ app.get('/livestop', (req, res) => {
     var dateinMs = Date.now();
     date = new Date(dateinMs)
     date = date.toISOString();
-    var response = { "type": "live-stream.broadcast.ended",
+    var response = [{ "type": "live-stream.broadcast.ended",
                     "emittedAt": date,
                     "liveStreamId":"li2DAIhNB6eM0U5OAOzMeiHY"
-                    }
+                    }]
 
 
     res.send(response);  
@@ -65,12 +65,12 @@ app.get('/encoded', (req, res) => {
     var dateinMs = Date.now();
     date = new Date(dateinMs);
     date = date.toISOString();
-    var response = { "type": "video.encoding.quality.completed",
+    var response = [{ "type": "video.encoding.quality.completed",
                     "emittedAt": date,
                     "videoId": "vi5uZLbBk51sIP2NGYQsLMM9",
                     "encoding":"hls",
                     "quality": "720p"
-                    }
+                    }]
 
 
     res.send(response);  
